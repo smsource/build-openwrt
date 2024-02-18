@@ -133,11 +133,12 @@ on:
       openwrt_kernel:
         description: "Select kernel version"
         required: false
-        default: "5.15.1_6.1.1"
+        default: "5.15.103_6.1.77"
         type: choice
         options:
-          - 5.4.1_5.10.1
-          - 5.15.1_6.1.1
+          - 5.4.237_5.10.209
+          - 5.15.103_6.1.77
+          - 6.6.11_6.6.16
           - 5.4.268
           - 5.10.209
           - 5.15.148
@@ -349,7 +350,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           body: |
             ### OpenWrt Image information
-            - Default IP: 192.168.1.1
+            - Default IP: 192.168.18.254
             - Default username: root
             - Default password: password
             - Default WIFI name: OpenWrt
